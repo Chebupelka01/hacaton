@@ -1,0 +1,205 @@
+@font-face {
+    font-family: "Rupster";
+    src: url(../fonts/Rupster\ Script\ Free\ Regular.ttf);
+}
+
+@font-face {
+    font-family: "Eugusto";
+    src: url(../fonts/EugustoFreePersonalUse-Regular.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+.link_left {
+    margin-right: auto;
+}
+
+.link:hover {
+    background-color: white;
+    color: red;
+}
+
+.new_header {
+    text-align: center;
+    color: #ff0000;
+    font-size: 3rem;
+    font-family: "Rupster";
+    border-bottom: 4px solid #ff0000;
+}
+
+.news {
+    padding: 20px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.info_1, .info_2, .info_3 {
+    max-width: 40%;
+    padding: 20px;
+    border: 2px solid #000;
+    font-size: 1.5rem;
+    font-family: "Eugusto";
+    margin: 15px;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+}
+
+.info_btn {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.newyear {
+    margin-top: 120px;
+    background-image: url(../images/newyearr.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.newyear_info {
+    background-color: #FFFFFF40;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    margin-right: 100px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.newyear_info h1 {
+    font-family: "Rupster";
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.newyear_info p {
+    font-family: "Eugusto";
+    font-size: 1.5rem;
+    margin-top: 5px;
+    line-height: 1.6;
+}
+
+
+/* Адаптивность*/
+@media (max-width: 768px) {
+    .new_header {
+        font-size: 2rem;
+    }
+
+    .news {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .info_1, .info_2, .info_3 {
+        max-width: 90%;
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .image {
+        height: 200px;
+    }
+
+    .newyear {
+        height: 500px;
+    }
+
+    .newyear_info {
+        max-width: 300px;
+        padding: 15px 20px;
+        margin-right: 10px;
+    }
+
+    .newyear_info h1 {
+        font-size: 1.8rem;
+    }
+
+    .newyear_info p {
+        font-size: 1.3rem;
+    }
+
+    .link {
+        margin: 0 10px;
+        padding: 5px 10px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .new_header {
+        font-size: 2.2rem;
+    }
+
+    .news {
+        font-size: 1.6rem;
+    }
+
+    .info_1, .info_2, .info_3 {
+        max-width: 70%;
+        font-size: 1.2rem;
+    }
+
+    .image {
+        height: 250px;
+    }
+
+    .newyear {
+        height: 600px;
+    }
+
+    .newyear_info {
+        max-width: 350px;
+        padding: 20px 25px;
+        margin-right: 15px;
+    }
+
+    .newyear_info h1 {
+        font-size: 1.1rem;
+    }
+
+    .newyear_info p {
+        font-size: 1rem;
+    }
+}
