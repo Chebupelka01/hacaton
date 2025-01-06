@@ -1,0 +1,196 @@
+/Это для заголовков/
+@font-face {
+    font-family: "Rupster";
+    src: url(../fonts/Rupster\ Script\ Free\ Regular.ttf);
+}
+/Это для текста/
+@font-face {
+    font-family: "Eugusto";
+    src: url(../fonts/EugustoFreePersonalUse-Regular.otf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+}
+.link{
+    color: white;
+    text-decoration: none;
+    margin:0 15px;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+.link_left{
+    margin-right: auto;
+}
+.link:hover{
+    background-color: white;
+    color: red;
+    border-radius: 50px;
+}
+.new_header{
+    text-align: center;
+    color: #ff0000;
+    font-size: 48px;
+    font-family: "Rupster";
+    border-bottom: 4px solid #ff0000;
+}
+.news{
+    padding: 20px 20px;
+    display: block;
+    text-align: center;
+    font-size: 48px;
+}
+.info_1, .info_2, .info_3{
+    max-width: 40%;
+    padding: 20px;
+    border: 1px solid #333;
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 24px;
+    font-family: "Eugusto";
+    padding: 10px;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 15px;
+}
+.image{
+    width: 100%;
+    height: 300px;
+}
+.info_btn{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50px;
+    display: inline-block;
+}
+.newyear{
+    margin-top: 120px;
+}
+.newyear{
+    background-image: url(../images/newyearr.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.newyear_info{
+    width: 300px;
+    height: 200px;
+    background-color: #FFFFFF40;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.newyear_info h1{
+    font-family: "Rupster";
+    font-size: 20px;
+}
+.newyear_info p{
+    font-family: "Eugusto";
+    margin-top: 5px;
+}
+/* --- Адаптивные стили для планшетов (до 768px) --- */
+@media (max-width: 768px) {
+    .nav_bar {
+        flex-wrap: wrap; /* Элементы переносятся на следующую строку */
+        justify-content: center; /* Центрируем элементы */
+    }
+
+    .nav_bar .link_left img {
+        width: 80px; /* Уменьшаем логотип */
+        height: 80px;
+    }
+
+    .nav_bar .link {
+        font-size: 16px; /* Уменьшаем шрифт ссылок */
+    }
+
+    .newyear_info {
+        max-width: 90%; /* Уменьшаем ширину полупрозрачного блока */
+    }
+
+    .newyear_info h1 {
+        font-size: 28px; /* Уменьшаем заголовок */
+    }
+
+    .newyear_info p {
+        font-size: 16px;
+    }
+
+    .news {
+        padding: 20px; /* Уменьшаем внутренние отступы секции */
+    }
+
+    .new_header {
+        font-size: 22px; /* Уменьшаем размер заголовка новостей */
+    }
+
+    article {
+        margin-bottom: 30px;
+    }
+
+    .info_btn {
+        padding: 8px 15px; /* Уменьшаем размер кнопок */
+    }
+}
+
+/* --- Адаптивные стили для мобильных устройств (до 480px) --- */
+@media (max-width: 480px) {
+    .nav_bar {
+        padding: 10px; /* Уменьшаем отступы в навигации */
+    }
+
+    .nav_bar .link_left img {
+        width: 60px; /* Еще сильнее уменьшаем логотип */
+        height: 60px;
+    }
+
+    .nav_bar .link {
+        font-size: 14px; /* Еще меньше шрифт для ссылок */
+    }
+
+    .newyear_info {
+        padding: 15px; /* Уменьшаем внутренние отступы блока */
+    }
+
+    .newyear_info h1 {
+        font-size: 24px; /* Уменьшаем заголовок */
+    }
+
+    .newyear_info p {
+        font-size: 14px; /* Уменьшаем текст */
+    }
+
+    .news {
+        padding: 15px; /* Уменьшаем отступы новостного раздела */
+    }
+
+    .new_header {
+        font-size: 20px;
+    }
+
+    .info_btn {
+        font-size: 14px;
+        padding: 8px 10px; /* Еще меньше кнопки */
+    }
+}
